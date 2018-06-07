@@ -4,7 +4,7 @@ const webdriver = require('selenium-webdriver'),
 const chrome = require("selenium-webdriver/chrome");
 const chromeCapabilities = webdriver.Capabilities.chrome();
 const chromeOptions = {
-   'args': ['--load-extension=C:\A11YExtensionTarget']
+   'args': ['--load-extension=C:/A11YExtensionTarget']
 }; //set the path of extension
 
 chromeCapabilities.set('chromeOptions', chromeOptions);
