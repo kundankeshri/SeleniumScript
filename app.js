@@ -9,7 +9,9 @@ const chromeOptions = {
 }; //set the path of extension
 var host = getenv('ACCESSIBILITY');
 console.log(host);
-chromeCapabilities.set('chromeOptions', chromeOptions);
+if(host === 'ACCESSIBILITY'){
+  chromeCapabilities.set('chromeOptions', chromeOptions);
+}
 const driver = new webdriver.Builder()
 .withCapabilities(chromeCapabilities)
 .forBrowser("chrome")
